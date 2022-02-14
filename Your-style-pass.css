@@ -2,11 +2,11 @@
     font-family: 'Nunito', sans-serif;
     list-style-type: none;
     padding: 0px;
-margin: 10px;
+margin: 0px;
 }
 
 html,body{
-    width: 1440px;
+    max-width: 1440px;
     background-color: #F4F4F4;
 }
 
@@ -15,14 +15,14 @@ html,body{
 =========================*/
 .header {
     height: 90px;
-    margin:10px 20px ;
+    margin:10px 20px 0px 0px ;
 }
 .header div{
     display: flex;
 }
 .header div img{
-    width: 130px;
-    height: 45px;
+    width: 145px;
+    height: 50px;
 }
 .top .options{
     position: relative;
@@ -31,10 +31,11 @@ html,body{
 .options div h2{
     justify-content: space-between;
     padding: 10px 0px;
-    margin: 0px 40px 0px 0px;
+    margin: 10px 40px 0px 0px;
     font-size: 16px;
 }
-.options button{margin: 0px 10px;
+.options button{
+    margin: 10px 10px 0px 10px;
     margin-left: 40px;
     justify-content: space-between;
     width: 100px;
@@ -57,7 +58,6 @@ Introduction
 =========================*/
 .intro-content{
     height: 350px;
-    width: 1440px;
     background-image: url(assets/img/intro-pic.png);
     border-radius: 5px;
     background-repeat: no-repeat;
@@ -65,52 +65,44 @@ Introduction
     background-size: cover;
     margin-bottom: 30px;
 }
-.intro-content .contents h1{
+.intro-content .contents{
+    color: white;
     position: relative;
     top: 150px;
-    left: 42%;
+}
+ .intro-content .contents h1{
     font-size: 36px;
     color: #fff;
-    align-items: center;
+    text-align: center;
 }
 .intro-content .contents p{
-    position: relative;
-    top: 150px;
-    left: 27%;
     font-size: 16px;
     color: #fff;
-    align-items: center;
-}
-.intro-content .contents .secondary{
-    position: relative;
-    top: 145px;
-    left: 32%;
-    font-size: 16px;
-    color: #fff;
-    align-items: center;
+    padding: 0px 370px;
+    text-align: center;
 }
 .intro-content .contents form select{
-    position: relative;
-    top: 150px;
-    left: 85%;
     height: 50px;
     width: 150px;
     border: none;
     border-radius: 5px;
-    padding: 10px 35px;
+    padding: 10px 35px 10px 40px;
+    background: url(icons/Dropdown\ Vector.png) no-repeat 100px #fff;
+    background-size: 12px;
     font-size: 16px;
     font-weight: 600;
+    margin: 35px 0px 0px 1190px ;
+    -webkit-appearance: none
 }
 
 /* ======================
 Recommended Events
 =========================*/
 .recommended{
-    position: relative;
+    margin: 0px 0px;
 }
 .recommended h3{
-    margin-top: 60px;
-    margin-left: 30px;
+    margin: 60px 0px 35px 0px;
 }
 .event-org{
     display: flex;
@@ -119,7 +111,7 @@ Recommended Events
     background-color: #fff;
     height: 360px;
     border-radius: 5px;
-    box-shadow:1px 2px 3px rgba(0,0,0,0.4)
+    box-shadow:1px 2px 3px rgba(0,0,0,0.4);
 }
 .event-org .event{
     border: 1px solid #F4F4F4;
@@ -134,7 +126,7 @@ Recommended Events
     margin: 0px;
 }
 .event-info{
-    margin: 0px;
+    margin: 12px;
 }
 .event-info h1{
     font-size: 18px;
@@ -142,9 +134,12 @@ Recommended Events
 .event-info p{
     font-size: 14px;
     font-weight: 700;
+    margin-top: 10px;
 }
 .event-details{
     display: flex;
+    margin: px;
+    justify-content: space-evenly;
 }
 .event-details img{
     width: 20px;
@@ -153,17 +148,19 @@ Recommended Events
 }
 .event-details h6{
     font-size: 12px;
-    margin-left: 4px;
+    margin: 10px 0px 0px -6px;
+}
+.upcoming-events{
+    margin: 0px 0px;
 }
 .upcoming-events h3{
-    margin-top: 60px;
-    margin-left: 30px;
+    margin: 60px 0px 35px 0px;
 }
 /* ======================
 Event Pages
 =========================*/
 .pages{
-    margin-top: 100px;
+    margin: 100px 0px;
 }
 .pages ul{
     display: flex;
@@ -172,7 +169,6 @@ Event Pages
 .pages ul li{
     font-size: 14px;
     font-weight: 600;
-    /* margin: 20px; */
 }
 .pages ul button{
     width: 50px;
@@ -181,6 +177,16 @@ Event Pages
     border-radius: 5px;
     border: 1px solid #fff;
     box-shadow:1px 2px 3px rgba(0,0,0,0.4);
+    font-weight: 600;
+}
+.pages ul button:hover{
+    opacity: 0.6;
+}
+.pages ul button:nth-child(1){
+    margin: 10px 20px 0px 0px;
+}
+.pages ul button:nth-child(12){
+    margin: 10px 0px 0px 20px;
 }
 .pages ul img{
     width: 30px;
@@ -190,24 +196,28 @@ Event Pages
     border: 1px solid #D982AA;
     box-shadow:1px 2px 3px rgba(0,0,0,0.4);
     padding: 6px;
+    margin: 10px 0px 0px 0px;
 }
 .pages ul li{
     margin: 15px 20px;
+    margin-top: 18px;
 }
 
 /* ==========================
 Subscript
 ============================*/
+.subscript{
+    height: 350px;
+}
 .summary{
     display: flex;
-    margin-top: 50px;
-    margin-bottom: 80px;
+    margin: 0px 0px;
 }
 .summary .part-one{
-    margin-right: 100px;
+    margin: 50px 0px 30px 20px;
 }
 .summary .part-two{
-    margin-right: 100px;
+    margin: 50px 0px 30px 80px;
 }
 .summary .part-one img{
     width: 130px;
@@ -222,15 +232,20 @@ Subscript
     font-size: 16px;
 }
 .part-two ul li{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    margin: 5px 0px;
+}
+.summary .part-three{
+    margin: 50px 0px 30px 80px;
 }
 .part-three ul h1{
     font-size: 16px;
 }
 .part-three ul li{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    margin: 5px 0px;
 }
 
 .line{
@@ -250,7 +265,8 @@ Socials
     font-weight: 700;
 }
 .social-media{
-    display: flex;;
+    display: flex;
+    margin: 0px 0px 50px 25px;
 }
 .socials{
     margin-left: 630px;
